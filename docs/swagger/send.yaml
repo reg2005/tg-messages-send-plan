@@ -1,0 +1,31 @@
+/api/send:
+  post:
+    summary: Regiasdster as user
+    tags:
+      - Send
+    requestBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+              - apiKey
+              - channelId
+              - message
+            properties:
+              apiKey:
+                type: string
+              channelId:
+                type: string
+                description: Channel id
+              message:
+                type: string
+                description: Your message
+    produces:
+      - application/json
+    responses:
+      200:
+        description: Success
+      422:
+        description: Validation errors
