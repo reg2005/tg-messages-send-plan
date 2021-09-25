@@ -23,7 +23,7 @@ import HealthCheck from '@ioc:Adonis/Core/HealthCheck'
 Route.get('healthcheck', async ({ response }) => {
   const report = await HealthCheck.getReport()
   if (!report.healthy) {
-    console.error(report)
+    console.error(JSON.stringify(report))
   }
   return report.healthy ? response.ok(report) : response.badRequest(report)
 })

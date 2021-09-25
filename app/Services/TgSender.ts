@@ -46,7 +46,7 @@ export class TgSenderClass {
       console.log(`TELEGRAM START: ${msg}`)
       try {
         await this.axios.get(
-          `https://api.telegram.org/bot${apiKey}/sendMessage?chat_id=${chatId}&parse_mode=HTML&text=${encodeURIComponent(
+          `https://api.telegram.org/bot${apiKey}/sendMessage?chat_id=${chatId}&parse_mode=HTML&no_webpage=true&text=${encodeURIComponent(
             message
           )}`
         )

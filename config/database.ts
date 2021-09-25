@@ -43,7 +43,7 @@ const databaseConfig: DatabaseConfig = {
         naturalSort: true,
       },
       useNullAsDefault: true,
-      healthCheck: true,
+      healthCheck: false,
       debug: false,
     },
 
@@ -70,7 +70,7 @@ const databaseConfig: DatabaseConfig = {
       migrations: {
         naturalSort: true,
       },
-      healthCheck: true,
+      healthCheck: false,
       debug: false,
     },
 
@@ -124,7 +124,7 @@ const databaseConfig: DatabaseConfig = {
       migrations: {
         naturalSort: true,
       },
-      healthCheck: true,
+      healthCheck: false,
       debug: false,
     },
 
@@ -151,7 +151,7 @@ const databaseConfig: DatabaseConfig = {
       migrations: {
         naturalSort: true,
       },
-      healthCheck: true,
+      healthCheck: false,
       debug: false,
     },
   },
